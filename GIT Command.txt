@@ -1,0 +1,14 @@
+Cloning Git Hub Project- 
+  git clone <origin_ul>
+
+git clone --single-branch --branch <branchname> <remote-repo>  - to clone branch particulary
+-----------------------------------------------------------------------------------------------
+Creating New Branch -
+  git branch <branchname>
+-----------------------------------------------------------------------------------------------
+Swithcing to Other Branch -
+  git switch <branchname>
+-----------------------------------------------------------------------------------------------
+Push Branch in GitHub
+  git push origin <branchname>
+------------------------------------------------------------------------------------------------

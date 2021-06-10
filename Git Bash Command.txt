@@ -1,0 +1,85 @@
+3. Initializing a Repository in an Existing Directory
+If you have a project directory that is currently not under version control and you want to start controlling it with Git, you first need to go to that project’s directory. If you’ve never done this, it looks a little different depending on which system you’re running:
+
+for Linux:
+
+$ cd /home/user/my_project
+for macOS:
+
+$ cd /Users/user/my_project
+for Windows:
+
+$ cd C:/Users/user/my_project
+and type:
+
+$ git init
+-----------------------------------------------------------------------------------------
+2. You can view all of your settings and where they are coming from using:
+
+$ git config --list --show-origin
+----------------------------------------------------
+3. Your Identity
+The first thing you should do when you install Git is to set your user name and email address. 
+This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating:
+
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+
+Again, you need to do this only once if you pass the --global option, because then Git will always use that information 
+for anything you do on that system. If you want to override this with a different name or email address for specific projects, 
+you can run the command without the --global option when you’re in that project.
+----------------------------------------------------------------------------------------------------------------------------------
+4.  1. Generating a new SSH key and adding it to the ssh-agent : 
+ 		a.) Open Git Bash.
+		b.) Paste the text below, substituting in your GitHub email address.
+			$ ssh-keygen -t ed25519 -C "your_email@example.com"
+		c.) Continue to Pressing Enter Button
+
+     2. Adding your SSH key to the ssh-agent 
+		$ eval `ssh-agent -s`
+     3. View generated key
+	        $ cat ~/.ssh/id_ed25519.pub	
+     4. Copy ssh Key and paste it to Github Account > Setting > SSH & GPG Keys > Click on New SSH Key- Name the key in title and paste in key section
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+For More Details Visit - 												    |
+	https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent  |
+        https://docs.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account              |
+-----------------------------------------------------------------------------------------------------------------------------
+5. Go to GitHub Repository List and 
+    a.) click on your reposity name 
+    b.) copy second last command and paste it in Git Bash Command Line
+		ex- git remote add origin https://github.com/Mukeshints/CrickGup.git    
+    c.) after that copy last command -
+		ex- git push -u origin main
+
+----------------------------------------------------------------------------------------------------------------------------------
+Some Important Commands - 
+git clone url : used to clone project
+
+1. git clone --single-branch --branch <branchname> <remote-repo> : for cloning single branch from repository
+2. git status : check status of our working tree
+3. git init : initialize git repository
+4. code .  : open visual studio code IDE
+5. git add <filename> : Fetch Untracked File to Staging Area | ex- git add index.html
+6. git add -A : Fetch All Untracked File to Staging Area 
+6. git touch <filename> : to create a filename | ex- git touch about.html
+7. git commit -m "Commit Message" : Commit the changes to be done 
+8. git checkout <filename> : Match our changes to Last Commit.
+9. git checkout -f 	   : Match all changes of Working Tree to Last commit
+10. git log : tells what are commited till now.
+11. git log -p -<number> : Tells last <number> commit | ex- git log -p -1 gives last one commit, git log -p -2 gives last two commit  and so on...
+12. git push origin <branchname> : Push file
+13 git branch <branchname> : create branch
+--------------------------------------------
+Push Branch In Repository
+  git push origin <your_branch_name>
+----------------------------------------------
+
+
+
+
+
+
+

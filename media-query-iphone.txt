@@ -1,0 +1,11 @@
+/*=====|Media Query|======*/
+
+@media screen and (max-width:375px) and (orientation:portrait) {}
+@media screen and (max-width:375px) {}
+@media screen and (max-width:412px) and (orientation: portrait) {}
+@media screen and (max-width:414px) {}
+@media screen and (max-width: 650px) {}
+ @media screen and (max-width:734px) {}
+@media screen and (max-width:768px) {}
+@media screen and (max-width:1024px) {}
+ 

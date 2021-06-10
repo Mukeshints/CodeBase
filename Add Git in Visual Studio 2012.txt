@@ -1,0 +1,10 @@
+Steps to Install Git in Visual Studio 2012
+
+1. Downaload Latest Update for Visual Studio 2012 -
+	https://support.microsoft.com/en-us/topic/visual-studio-2012-update-5-0eb799e7-c01b-c935-d09e-956cdeb938f0 
+--------------------------------------------------------------------------------------------------------------------
+2. Download Visual Studio Tools for Git
+	https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit
+--------------------------------------------------------------------------------------------------------------------
+3. Visit - https://stackoverflow.com/questions/19892232/how-to-connect-visual-studio-2012-with-git-github#:~:text=First%20of%20all%2C%20install%20Visual,haven't%20done%20so).
+   and do the steps as mentioned.
