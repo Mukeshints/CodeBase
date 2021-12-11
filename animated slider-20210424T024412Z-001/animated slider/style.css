@@ -146,9 +146,10 @@ body,
 
 /* Changes position of caption */
 .carousel-caption {
-    top: 10%;
-    right: 0;
+    top:30%;
+    right:10%;
     bottom: auto;
 }
-.heading{font-size:15px; color:#ff063d}
+.carousel-caption a{color:azure}
+.heading{ color:#ff063d}
 .sub-heading{font-size: 15px; }
